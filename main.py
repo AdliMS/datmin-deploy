@@ -16,7 +16,7 @@ alt.themes.enable("dark")
 
 st.title('Analisa Hasil Pendapatan Pekerjaan di Bidang Data Science dan Identifikasi Faktor - Faktor yang Mempengaruhi Nilainya')
 
-df = pd.read_csv('data/jobs_in_data.csv')
+df = pd.read_csv('jobs_in_data.csv')
 
 year = df.groupby('work_year').median(numeric_only=True)
 year = year.rename_axis('work_year').reset_index()
